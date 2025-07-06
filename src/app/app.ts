@@ -9,4 +9,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected title = 'events';
+
+  handleEvent(event:Event){
+    console.log(event);
+   console.log(event.target);
+  console.log("value",(event.target as HTMLInputElement).value);
+
+  }
 }
